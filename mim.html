@@ -148,7 +148,7 @@
 			</header>
 
 		
-			<div role="main" class="main">
+			<div role="main" class="main" >
 				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
 					<div class="owl-stage-outer">
 						<div class="owl-stage">
@@ -245,16 +245,16 @@
 				</div>
 	
 
-				<div class="container">
+				<div class="container" id="scroll-section" >
 
-					<div class="row text-center pt-3">
+					<div class="row text-center pt-3" >
 					
 						
-							<div class="row mt-3 mb-5">
+							<div class="row mt-3 mb-5" >
 							
 								
 									
-									<div class="overflow-hidden mb-3">
+									<div class="overflow-hidden mb-3" >
 										<h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation animated maskUp appear-animation-visible text-color-primary " data-appear-animation="maskUp" style="animation-delay: 100ms;">
 											<span>M.I.M.Moulage par injection d’acier</span>
 						
@@ -277,7 +277,7 @@
 		
 				
 				
-				<div class="container-fluid">
+				<div class="container-fluid" >
 					<div class="row align-items-center">
 						<div class="col-lg-6 p-0">
 							<section class="section section-background bg-size-cover p-relative h-100 m-0" style="background: url(img/section/6.jpg); min-height: 500px;">
@@ -509,6 +509,14 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
-
+		<script>
+			window.addEventListener('load', function() {
+				const section = document.getElementById('scroll-section');
+				section.scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+			
+			</script>
 	</body>
 </html>

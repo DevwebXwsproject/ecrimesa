@@ -236,9 +236,9 @@
 				</div>
 	
 
-				<div class="container">
+				<div class="container"  id="scroll-section" >
 
-					<div class="row text-center pt-3">
+					<div class="row text-center pt-3" >
 					
 						
 							<div class="row mt-3 mb-5">
@@ -291,7 +291,7 @@
 							</div>
 						</div>
 				 </div>
-				 <div class="container">
+				 <div class="container" >
 
 					<div class="container container-xl-custom pt-5">
 						<div class="row">
@@ -545,6 +545,17 @@
 		e.preventDefault();
 		$('#googlemaps').gMap("centerAt", options);
 	}
+
+</script>
+
+
+<script>
+window.addEventListener('load', function() {
+    const section = document.getElementById('scroll-section');
+    section.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 
 </script>
 </body>
